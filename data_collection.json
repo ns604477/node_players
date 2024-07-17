@@ -1,0 +1,53 @@
+[
+    {
+      "name": "Nishant",
+      "age": 24,
+      "address": "Solan, Tehsil Kasauli"
+    },
+    {
+      "name": "Rahul",
+      "age": 26,
+      "address": "Shimla"
+    },
+    {
+      "name": "Suraj",
+      "age": 23,
+      "address": "Kangra"
+    },
+    {
+      "name": "Ajay",
+      "age": 22,
+      "address": "Manali"
+    },
+    {
+      "name": "Sushant",
+      "age": 25,
+      "address": "Dharamshala"
+    },
+    {
+      "name": "Amit",
+      "age": 21,
+      "address": "Chamba"
+    },
+    {
+      "name": "Aman",
+      "age": 24,
+      "address": "Bilaspur"
+    },
+    {
+      "name": "Aditya",
+      "age": 23,
+      "address": "Palampur"
+    },
+    {
+      "name": "Anshul",
+      "age": 25,
+      "address": "Una"
+    },
+    {
+      "name": "Kamal",
+      "age": 22,
+      "address": "Mandi"
+    }
+  ]
+  

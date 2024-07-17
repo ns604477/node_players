@@ -4,11 +4,13 @@ const dotenv = require("dotenv");
 const Person = require("./modeles/Person");
 const Player = require("./modeles/Players"); // Correct path
 const db = require("./db");
+require('dotenv').config();
 
 dotenv.config();
 const app = express();
 
 app.use(bodyParser.json());
+const PORT=process.env.PORT||3000;
 
 app.get("/", (req, res) => {
   res.send("Welcome to Sharma");
@@ -64,7 +66,9 @@ app.get("/player", async (req, res) => {
   }
 });
 
-app.listen(3000, () => {
+
+
+app.listen(PORT, () => {
   console.log("Listening on port 3000");
 });
 

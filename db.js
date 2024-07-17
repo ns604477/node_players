@@ -1,6 +1,7 @@
 const mongoose = require("mongoose");
+require('dotenv').config();
 
-const mongoUrl = "mongodb://localhost:27017/nsdatabase";
+const mongoUrl = process.env.MONGODB_URL_LOCAL || process.env.MONGODB_URL;
 
 // Connect to MongoDB
 mongoose.connect(mongoUrl, {
@@ -10,17 +11,17 @@ mongoose.connect(mongoUrl, {
 
 const db = mongoose.connection;
 
-// Move event listeners after connection setup
+// Event listeners for MongoDB connection
 db.on('connected', () => {
-  console.log("connected to the server mongo db");
+  console.log("Connected to the MongoDB server");
 });
 
 db.on('error', (err) => {
-  console.error("error on the server:", err);
+  console.error("Error on the MongoDB server:", err);
 });
 
 db.on('disconnected', () => {
-  console.log("disconnected to the server");
+  console.log("Disconnected from the MongoDB server");
 });
 
 module.exports = db;

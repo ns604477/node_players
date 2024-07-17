@@ -1,2 +1,2 @@
-#ignore nodemudules directory
 node_modules/
+.env
